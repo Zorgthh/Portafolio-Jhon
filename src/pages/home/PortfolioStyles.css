@@ -1,0 +1,131 @@
+/* Establecer fuente predeterminada */
+.design-root {
+  font-family: 'Jost', sans-serif;
+}
+
+/* Imagen de fondo general */
+.background-image {
+  background-image: url("./img/programming-and-coding-concept-vector.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Hero Section (con gradiente de fondo y imagen) */
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), 
+    url("./img/No me puedo rendir.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Estilos para las imágenes de los proyectos */
+.project-image-1, .project-image-2, .project-image-3 {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  height: 300px;
+}
+
+/* Cada imagen de proyecto con su URL específica */
+.project-image-1 {
+  background-image: url("./img/{F5F663CF-BCA0-4E56-83E5-662A6E3896AB}.png");
+}
+
+.project-image-2 {
+  background-image: url("./img/{44E6E2D2-24E0-4AFF-A495-A9C13AF08F98}.png");
+}
+
+.project-image-3 {
+  background-image: url("./img/{54FF059A-9C07-4202-9797-5B2E2E97D92C}.png");
+}
+
+/* Sección de Proyectos Destacados */
+.projects-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+/* Contenedor de cada proyecto */
+.project-item {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: calc(33.33% - 16px);
+  min-width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+}
+
+.project-details {
+  padding: 16px;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #111418;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #637588;
+}
+/* Estilo para el footer */
+footer {
+  background-color: #111418;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer .text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .text-center a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+footer .text-center a:hover {
+  color: #f4f6f9;
+}
+
+footer p {
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+
+
+/* Media Queries para hacer el diseño responsivo */
+@media (max-width: 1024px) {
+  .project-item {
+    width: calc(50% - 16px);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-item {
+    width: 100%;
+  }
+}
